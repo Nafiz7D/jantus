@@ -64,4 +64,9 @@ btn.addEventListener('click', function () {
         document.getElementById('input-field').value = "";
     }
 
-})
+});
+
+// const btn = document.getElementById('purchase');
+// btn.addEventListener('click', function () {
+//     swal("Congratulions", "You purchase the products!", "success",);
+// })

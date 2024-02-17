@@ -9,6 +9,8 @@
   <link rel="shortcut icon" href="Images/Summer 1.png" type="image/x-icon" />
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
 </head>
 
 <body>
@@ -214,7 +216,7 @@
                 Total: $<span id="total"></span>
               </p>
               <hr class="my-4" />
-              <button class="btn btn-wide bg-[#F11A7B] text-white">
+              <button id="purchase" class="btn btn-wide bg-[#F11A7B] text-white">
                 Make Purchase
               </button>
             </div>
@@ -223,6 +225,19 @@
       </div>
     </section>
   </main>
+  <script>
+    const sellProduct = document.getElementById('purchase');
+    sellProduct.addEventListener('click', function () {
+      Swal.fire({
+        position: "middle",
+        icon: "success",
+        title: "Congralutaions",
+        showConfirmButton: false,
+        timer: 1500
+      });
+    })
+  </script>
+  <script src="script.js"></script>
   <script src="index.js"></script>
 </body>
 
